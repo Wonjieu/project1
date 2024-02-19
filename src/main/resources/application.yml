@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true  # 오타 수정: 't' 대신 'true'
+        defer-datasource-initialization: true
+
+
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    initialize: true
+
+  h2:
+    console:
+      enabled: true
+
+
+
+
+
